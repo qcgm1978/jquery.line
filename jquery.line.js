@@ -54,6 +54,7 @@
 
   $.fn.line = function( x1, y1, x2, y2, options, callbacks) {
                 return $(this).each(function(){
+                  var callback=function(){}
                   if($.isFunction(options)){
                       callback = options;
                       options = null;
